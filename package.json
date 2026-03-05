@@ -1,0 +1,54 @@
+{
+  "name": "mcp-github-analytics",
+  "version": "1.0.0",
+  "description": "MCP server providing deep GitHub repository analytics through natural language",
+  "type": "module",
+  "main": "./build/index.js",
+  "bin": {
+    "mcp-github-analytics": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "node --test",
+    "clean": "rm -rf build"
+  },
+  "keywords": [
+    "mcp",
+    "github",
+    "analytics",
+    "repository",
+    "insights",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "developer-tools"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/mcp-github-analytics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/mcp-github-analytics/issues"
+  },
+  "homepage": "https://github.com/yourusername/mcp-github-analytics#readme",
+  "author": "",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@octokit/graphql": "^8.0.0",
+    "@octokit/rest": "^21.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
