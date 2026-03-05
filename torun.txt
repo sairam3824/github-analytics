@@ -1,0 +1,23 @@
+1. Build the project:
+   npm install && npm run build
+
+2. Get a GitHub token:
+   Generate one at GitHub Settings -> Developer Settings -> Personal access tokens (needs `public_repo` scope)
+
+3. Update Claude config (e.g., `~/Library/Application Support/Claude/claude_desktop_config.json`):
+```json
+{
+  "mcpServers": {
+    "mcp-github-analytics": {
+      "command": "node",
+      "args": ["/Users/sairammaruri/Documents/New git projects/github-analytics/build/index.js"],
+      "env": {
+        "GITHUB_TOKEN": "YOUR_GITHUB_TOKEN_HERE"
+      }
+    }
+  }
+}
+```
+
+4. Restart Claude Desktop and you're ready to use it!
+   Try asking: "Analyze the commit patterns for facebook/react"
