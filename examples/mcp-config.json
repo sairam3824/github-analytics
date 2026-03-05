@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "github-analytics": {
+      "command": "mcp-github-analytics",
+      "env": {
+        "GITHUB_TOKEN": "ghp_your_token_here"
+      }
+    }
+  }
+}
