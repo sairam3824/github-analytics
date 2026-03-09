@@ -171,7 +171,7 @@ node build/index.js
 
 ## License
 
-Apache-2.0
+MIT
 
 ## Contributing
 
